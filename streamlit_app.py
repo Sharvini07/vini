@@ -15,7 +15,7 @@ name = st.text_input("Enter your name3")
 #knowledge base
 env.build('(deftemplate result(slot name))')
 
-env.assert_string(f'(result(name "){name}"))')
+env.assert_string(f'(result(name "{name}"))')
 
 #interface
 env.run()
