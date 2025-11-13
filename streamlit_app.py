@@ -23,7 +23,7 @@ env.run()
 #output
 results = []
 for fact in env.facts():
-    if fact.template.name == 'results' :
+    if fact.template.name == 'result' :
         results.append(fact['name']) #Why assert the fact?
 
 st.write(results[0],"outputs")
